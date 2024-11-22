@@ -1,0 +1,67 @@
+
+
+.content_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12%;
+    color: white;
+    font-family: "Clash Display", serif;
+    margin-bottom: 21rem;
+}
+
+.content_heading h1 {
+    font-size: 64px;
+    padding-bottom: 3rem;
+}
+
+.content_heading p {
+    font-size: 24px;
+    max-width: 30%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.content_serv {
+    font-family: "Clash Display", serif;
+    background-color: white;
+    color: black;
+    display: block;
+}
+
+.content_serv h2 {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    margin: 3rem;
+    padding-top: 3rem;
+}
+
+.services_row {
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px blue;
+}
+
+.services_row div {
+    height: 40rem;
+    width: 20rem;
+    border: 1px solid red;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.service_box h3 {
+    padding: 20px;
+}
+
+.services_row ul li {
+    color: black;
+    list-style-type: none;
+}
+
+
+.main_wrapper {
+    margin: 0px 15%;
+}
