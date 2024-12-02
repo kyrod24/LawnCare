@@ -1,0 +1,46 @@
+
+
+body {
+    background-color: white;
+    background-image: url(Grass_cutting_background.jpg);
+}
+
+main {
+    backdrop-filter: brightness(0.2); 
+}
+
+textarea {
+    min-width: 40vh;
+    max-width: 40vh;
+    max-height: 22vh;
+    min-height: 22vh;
+    resize: none;
+}
+
+
+.contact-form {
+    margin: 0px 15%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.575);
+}
+
+.contact-title {
+    font-family: "Clash Display";
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 4rem;
+}
+
+.contact-inputs {
+    margin: 1.5rem;
+    width: 20vh;
+    height: 2rem;
+    border: 3px solid lightgray;
+    font-family: "Clash Display";
+}
+
+
