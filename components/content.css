@@ -1,5 +1,3 @@
-
-
 .content_heading {
     display: flex;
     flex-direction: column;
@@ -23,6 +21,19 @@
     padding-bottom: 2rem;
 }
 
+.gallery-content_heading {
+    font-family: "Clash Display", serif;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 3rem; 
+    backdrop-filter: brightness(1);
+    color: black;
+}
+
+.gallery-images {
+    display: block;
+}
+
 .content_serv {
     font-family: "Clash Display", serif;
     background-color: white;
@@ -41,19 +52,25 @@
 .services_row {
     display: flex;
     justify-content: space-between;
-    border: solid 2px blue;
+    padding-bottom: 6rem;
 }
 
 .services_row div {
-    height: 40rem;
-    width: 20rem;
-    border: 1px solid red;
+    height: auto;
+    width: 22rem;
+    border: 6px solid rgba(162, 237, 100, 0.6);
+    border-radius: 5%;
     text-align: center;
     padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
 }
 
 .service_box h3 {
-    padding: 20px;
+    padding-bottom: 20px;
+    font-size: 32px;
+    text-wrap: nowrap;
 }
 
 .services_row ul li {
@@ -64,4 +81,64 @@
 
 .main_wrapper {
     margin: 0px 15%;
+    background-color: rgb(255, 255, 255);
+}
+
+#section-gall {
+    padding-bottom: 3rem;
+}
+#section-gall h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 3rem;
+}
+
+#section-gall button {
+    background-color: rgba(162, 237, 100, 0.9);
+    color: black;
+}
+
+.slider {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+    border: 6px solid rgba(162, 237, 100, 0.6);
+    margin-bottom: 3rem;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
 }

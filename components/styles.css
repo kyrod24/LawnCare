@@ -1,16 +1,22 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background-image: url(Grass_cutting_background.jpg);
 }
 
-li, a, button {
+.gallery-body {
+  background-image: none;
+  background-color: rgb(255, 255, 255);
+}
+
+li,
+a,
+button {
   font-family: "Clash Display", serif;
   font-weight: 500;
   font-size: 16px;
@@ -26,16 +32,34 @@ header {
   background-color: darkslategrey;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: darkslategrey;
+  font-family: "Clash Display", serif;
+}
+
 main {
   height: 100vh;
   color: white;
   backdrop-filter: brightness(0.2);
 }
 
+
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-comp-info {
+  display: inline-block;
+}
+
+.footer-comp-info h1 {
+  padding-bottom: 2rem;
 }
 
 /* This cta class specifically centers the navbar options until I figure out a better way to do it for different sized logos. */
@@ -97,4 +121,3 @@ main {
     max-width: 1920px;
   }
 }
-
